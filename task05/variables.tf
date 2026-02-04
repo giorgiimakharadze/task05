@@ -1,5 +1,7 @@
 variable "tags" {
   type = map(string)
+
+  description = "Tags"
 }
 
 variable "resource_groups" {
@@ -7,6 +9,8 @@ variable "resource_groups" {
     name     = string
     location = string
   }))
+
+  description = "Resource Groups"
 }
 
 variable "apps" {
@@ -42,6 +46,8 @@ variable "apps" {
       app_settings = map(string)
     })
   }))
+
+  description = "For App Services and App Service Plans"
 }
 
 variable "traffic_manager" {
@@ -62,4 +68,6 @@ variable "traffic_manager" {
       weight   = optional(number)
     }))
   })
+
+  description = "For Traffic Manager"
 }
