@@ -105,6 +105,7 @@ traffic_manager = {
   ttl              = 30
   monitor_protocol = "HTTPS"
   monitor_path     = "/"
+  monitor_port     = 443
 
   endpoints = [
     {
