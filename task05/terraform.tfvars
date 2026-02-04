@@ -108,12 +108,12 @@ traffic_manager = {
 
   endpoints = [
     {
-      name          = "app1-endpoint"
-      app_stack_key = "app1"
+      name    = "app1-endpoint"
+      app_key = "app1"
     },
     {
-      name          = "app2-endpoint"
-      app_stack_key = "app2"
+      name    = "app2-endpoint"
+      app_key = "app2"
     }
   ]
 }
